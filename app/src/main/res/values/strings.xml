@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Full Music</string>
+    <string name="ver_artistas">Artistas</string>
+    <string name="ver_albumes">Álbumes</string>
+    <string name="ver_canciones">Canciones</string>
+    <string name="buscar_artista">Buscar artista…</string>
+    <string name="buscar_album">Buscar álbum…</string>
+    <string name="buscar_cancion">Buscar canción…</string>
+    <string name="filtro_genero">Filtrar por género</string>
+    <string name="todos_los_generos">Todos los géneros</string>
+    <string name="detalles">Detalles</string>
+    <string name="nombre">Nombre</string>
+    <string name="genero">Género</string>
+    <string name="pais">País</string>
+    <string name="descripcion">Descripción</string>
+    <string name="titulo">Título</string>
+    <string name="artista">Artista</string>
+    <string name="año">Año</string>
+    <string name="duracion">Duración</string>
+    <string name="album">Álbum</string>
+    <string name="portada">Portada</string>
+    <string name="informacion_album">Información del Álbum</string>
+    <string name="informacion_cancion">Información de la Canción</string>
+</resources>

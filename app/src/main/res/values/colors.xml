@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_color">#403F3F</color>
+    <color name="light_background">#FFF5F5F5</color>
+
+    <!-- Colores para las cards -->
+    <color name="card_color_1">#8DBCE6</color>
+    <color name="card_color_2">#476A8E</color>
+    <color name="card_color_3">#203C54</color>
+
+    <!-- Colores para fondos de cards del main -->
+    <color name="card_artistas">#8DBCE6</color>
+    <color name="card_albumes">#3498DB</color>
+    <color name="card_canciones">#2ECC71</color>
+
+    <color name="spinner_background">#FFFFFF</color>
+    <color name="spinner_text">#403F3F</color>
+    <color name="dropdown_background">#476A8E</color>
+    <color name="dropdown_text">#FFFFFF</color>
+</resources>

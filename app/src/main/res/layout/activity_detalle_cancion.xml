@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary_color"
+        app:titleTextColor="@color/white" />
+
+    <!-- ScrollView para contenido desplazable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Card de información principal -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="@color/card_color_2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="24dp">
+
+                    <!-- Icono de la canción -->
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_music"
+                        app:tint="@color/white" />
+
+                    <!-- Información básica -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="16dp">
+
+                        <TextView
+                            android:id="@+id/textTitulo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Título de la Canción"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/textArtista"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Artista"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="8dp" />
+
+                        <TextView
+                            android:id="@+id/textAlbum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Álbum"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp" />
+
+                        <TextView
+                            android:id="@+id/textDuracion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Duración"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp" />
+
+                        <TextView
+                            android:id="@+id/textGenero"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Género"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- 🔥 SECCIÓN DE OTRAS CANCIONES DEL ARTISTA -->
+            <TextView
+                android:id="@+id/textTituloOtrasCanciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Más canciones del artista"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_color"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone" />
+
+            <!-- RecyclerView para otras canciones -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerOtrasCanciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Mensaje cuando no hay otras canciones -->
+            <TextView
+                android:id="@+id/textNoOtrasCanciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No hay más canciones de este artista"
+                android:textSize="16sp"
+                android:textColor="@color/primary_color"
+                android:gravity="center"
+                android:padding="24dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
